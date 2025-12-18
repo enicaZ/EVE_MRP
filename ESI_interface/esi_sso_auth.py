@@ -16,8 +16,8 @@ app = Flask(__name__)
 app.secret_key = secrets.token_hex(32)  # 用于会话安全
 
 # Eve Online SSO配置 - 请从EVE开发者门户获取
-client_id = "a280dd2d97744d5aaccd8f4997d6bd84"  # 从 https://developers.eveonline.com/ 获取
-client_secret = "V5fDJEBgb2zrkK0HUVN9HqQ9H43dM1c9HrqXjZJs"  # 从 https://developers.eveonline.com/ 获取
+client_id = "your_client_id_here"  # 从 https://developers.eveonline.com/ 获取
+client_secret = "your_client_secret_here"  # 从 https://developers.eveonline.com/ 获取
 redirect_uri = "http://localhost:5000/callback"  # 必须在开发者门户注册的回调URL
 
 # 确保client_id和client_secret已正确设置
